@@ -11,21 +11,9 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 12,
+   "execution_count": 2,
    "metadata": {},
-   "outputs": [
-    {
-     "ename": "ModuleNotFoundError",
-     "evalue": "No module named 'scraping'",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-      "\u001b[0;31mModuleNotFoundError\u001b[0m                       Traceback (most recent call last)",
-      "\u001b[0;32m<ipython-input-12-433fcc357308>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mflask_pymongo\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mPyMongo\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0;32mimport\u001b[0m \u001b[0mscraping\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
-      "\u001b[0;31mModuleNotFoundError\u001b[0m: No module named 'scraping'"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "from flask_pymongo import PyMongo\n",
     "import scraping"
@@ -33,7 +21,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 6,
+   "execution_count": 3,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -42,7 +30,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 7,
+   "execution_count": 4,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -53,7 +41,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 8,
+   "execution_count": 5,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -65,7 +53,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 9,
+   "execution_count": 6,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -98,7 +86,7 @@
      "output_type": "stream",
      "text": [
       " * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)\n",
-      "[2021-03-19 13:22:09,202] ERROR in app: Exception on / [GET]\n",
+      "[2021-03-21 17:53:36,356] ERROR in app: Exception on / [GET]\n",
       "Traceback (most recent call last):\n",
       "  File \"/Users/seanstevens-fabry/opt/anaconda3/lib/python3.8/site-packages/flask/app.py\", line 2447, in wsgi_app\n",
       "    response = self.full_dispatch_request()\n",
@@ -112,7 +100,7 @@
       "    rv = self.dispatch_request()\n",
       "  File \"/Users/seanstevens-fabry/opt/anaconda3/lib/python3.8/site-packages/flask/app.py\", line 1936, in dispatch_request\n",
       "    return self.view_functions[rule.endpoint](**req.view_args)\n",
-      "  File \"<ipython-input-8-e191d5b2e6ba>\", line 4, in index\n",
+      "  File \"<ipython-input-5-e191d5b2e6ba>\", line 4, in index\n",
       "    return render_template(\"index.html\", mars=mars)\n",
       "  File \"/Users/seanstevens-fabry/opt/anaconda3/lib/python3.8/site-packages/flask/templating.py\", line 138, in render_template\n",
       "    ctx.app.jinja_env.get_or_select_template(template_name_or_list),\n",
@@ -129,8 +117,7 @@
       "  File \"/Users/seanstevens-fabry/opt/anaconda3/lib/python3.8/site-packages/flask/templating.py\", line 89, in _get_source_fast\n",
       "    raise TemplateNotFound(template)\n",
       "jinja2.exceptions.TemplateNotFound: index.html\n",
-      "127.0.0.1 - - [19/Mar/2021 13:22:09] \"\u001b[35m\u001b[1mGET / HTTP/1.1\u001b[0m\" 500 -\n",
-      "127.0.0.1 - - [19/Mar/2021 13:22:09] \"\u001b[33mGET /favicon.ico HTTP/1.1\u001b[0m\" 404 -\n"
+      "127.0.0.1 - - [21/Mar/2021 17:53:36] \"\u001b[35m\u001b[1mGET / HTTP/1.1\u001b[0m\" 500 -\n"
      ]
     }
    ],
@@ -138,6 +125,13 @@
     "if __name__ == \"__main__\":\n",
     "   app.run()"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "code",
